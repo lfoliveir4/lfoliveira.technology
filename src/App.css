@@ -1,22 +1,149 @@
-.App {
-  text-align: center;
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.App-logo {
-  height: 40vmin;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.large-header {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #111;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.demo .large-header {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #F9F1E9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+  font-weight: 200;
+}
+
+.container-box {
+  height: 450px;
+  width: 30%;
+  border: 1px solid white;
+  box-shadow: -1px 6px 13px 0px rgba(0,0,0,0.44);
+  -webkit-box-shadow: -1px 6px 13px 0px rgba(0,0,0,0.44);
+  -moz-box-shadow: -1px 6px 13px 0px rgba(0,0,0,0.44);
+  background-color: #F2F2F2;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #09d3ac;
+.text-name {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; 
+}
+
+.text-dev {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px; 
+}
+
+.container-icon {
+  margin-top: 15px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.icon {
+  border-radius: 250px;
+  width: 150px;
+  height: 150px;  
+
+}
+
+.container-social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  cursor: pointer;
+
+}
+
+.icon-social-media {
+  width: 30px;
+  height: 30px;
+}
+
+.text-email {
+  margin-top: 35px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 1024px) 
+{
+  .container-box {
+    width: 40%;
+   }
+}
+
+
+@media (max-width: 768px) 
+{
+  .container-box {
+    width: 60%;
+   }
+}
+
+
+@media (max-width: 425px) 
+{
+  .container-box {
+    width: 100%;
+   }
+}
+
+
+@media (max-width: 375px) 
+{
+  .container-box {
+    width: 100%;
+   }
+}
+
+
+@media (max-width: 320px) 
+{
+  .container-box {
+    width: 100%;
+   }
 }
