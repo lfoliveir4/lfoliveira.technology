@@ -1,7 +1,13 @@
 
 body {
   margin: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+a:link {
+  text-decoration:none;
+  color: black;
 }
 
 
@@ -19,7 +25,23 @@ body {
 }
 
 .demo .large-header {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+  background-color: hsla(200,40%,30%,.4);
+  background-image:       
+      url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+  background-repeat: repeat-x;
+  background-position: 
+      0 20%,
+      0 100%,
+      0 50%,
+      0 100%,
+      0 0;
+  background-size: 
+      2500px,
+      800px,
+      500px 200px,
+      1000px,
+      400px 260px;
+  animation: 50s para infinite linear;
 }
 
 .main-title {
@@ -45,7 +67,7 @@ body {
 }
 
 .container-box {
-  height: 450px;
+  height: 550px;
   width: 30%;
   border: 1px solid white;
   box-shadow: -1px 6px 13px 0px rgba(0,0,0,0.44);
@@ -54,6 +76,7 @@ body {
   background-color: #F2F2F2;
   align-items: center;
   justify-content: center;
+  animation: infinite;
 
 }
 
@@ -71,6 +94,16 @@ body {
   margin-top: 15px; 
 }
 
+.text-dev-app {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px; 
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
 .container-icon {
   margin-top: 15px; 
   display: flex;
@@ -78,6 +111,7 @@ body {
   align-items: center;
 
 }
+
 .icon {
   border-radius: 250px;
   width: 150px;
@@ -90,7 +124,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 50px;
   cursor: pointer;
 
 }
@@ -109,10 +143,20 @@ body {
 }
 
 
-@media (max-width: 1024px) 
+@media (max-width: 1440px) 
 {
   .container-box {
     width: 40%;
+    font-size: 13px;
+   }
+}
+
+
+@media (max-width: 1024px) 
+{
+  .container-box {
+    width: 50%;
+    font-size: 13px;
    }
 }
 
@@ -121,6 +165,7 @@ body {
 {
   .container-box {
     width: 60%;
+    font-size: 13px;
    }
 }
 
@@ -129,6 +174,7 @@ body {
 {
   .container-box {
     width: 100%;
+    font-size: 12px;
    }
 }
 
@@ -137,6 +183,7 @@ body {
 {
   .container-box {
     width: 100%;
+    font-size: 9px;
    }
 }
 
@@ -145,5 +192,21 @@ body {
 {
   .container-box {
     width: 100%;
+    font-size: 7px;
    }
 }
+
+
+
+
+@keyframes para {
+100% {
+    background-position: 
+        -5000px 20%,
+        -800px 95%,
+        500px 50%,
+        1000px 100%,
+        400px 0;
+    }
+}
+
