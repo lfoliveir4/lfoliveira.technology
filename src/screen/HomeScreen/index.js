@@ -46,7 +46,7 @@ function Home() {
                     </div>
 
                     <span class="text-name">Luis Filipe Alves de Oliveira</span>
-                    <span class="text-dev">Code two years and making dreams come true with React | React Native </span>
+                    <span class="text-dev">Coding since two years and making dream come true with React & React Native </span>
                     <span class="text-dev">What can I do to help you today ?!  </span>
                     <span class="text-dev-app"></span>
                     

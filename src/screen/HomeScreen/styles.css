@@ -151,13 +151,21 @@ a:link {
   align-items: center;
 }
 
+@media (max-width: 2560px) 
+{
+  .container-box {
+    width: 40%;
+    font-size: 17px;
+  }
+}
+
 
 @media (max-width: 1440px) 
 {
   .container-box {
     width: 40%;
-    font-size: 13px;
-    }
+    font-size: 10px;
+  }
 }
 
 
@@ -165,8 +173,8 @@ a:link {
 {
   .container-box {
     width: 50%;
-    font-size: 13px;
-    }
+    font-size: 12px;
+  }
 }
 
 
@@ -174,7 +182,7 @@ a:link {
 {
   .container-box {
     width: 60%;
-    font-size: 13px;
+    font-size: 10px;
     }
 }
 
@@ -183,8 +191,8 @@ a:link {
 {
   .container-box {
     width: 100%;
-    font-size: 12px;
-    }
+    font-size: 10px;
+  }
 }
 
 
@@ -192,7 +200,7 @@ a:link {
 {
   .container-box {
     width: 100%;
-    font-size: 9px;
+    font-size: 8px;
     }
 }
 
@@ -201,7 +209,7 @@ a:link {
 {
   .container-box span {
     width: 100%;
-    font-size: 9px;
+    font-size: 8px;
   }
 
   .container-projects {
