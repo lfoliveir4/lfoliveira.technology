@@ -13,6 +13,7 @@ a:link {
 
 .large-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -66,6 +67,12 @@ a:link {
   font-weight: 200;
 }
 
+.container-boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .container-box {
   height: 550px;
   width: 30%;
@@ -77,6 +84,8 @@ a:link {
   align-items: center;
   justify-content: center;
   animation: infinite;
+  -webkit-animation: fade-in-right 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-right 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
 }
 
@@ -148,7 +157,7 @@ a:link {
   .container-box {
     width: 40%;
     font-size: 13px;
-   }
+    }
 }
 
 
@@ -157,7 +166,7 @@ a:link {
   .container-box {
     width: 50%;
     font-size: 13px;
-   }
+    }
 }
 
 
@@ -166,7 +175,7 @@ a:link {
   .container-box {
     width: 60%;
     font-size: 13px;
-   }
+    }
 }
 
 
@@ -175,7 +184,7 @@ a:link {
   .container-box {
     width: 100%;
     font-size: 12px;
-   }
+    }
 }
 
 
@@ -184,19 +193,22 @@ a:link {
   .container-box {
     width: 100%;
     font-size: 9px;
-   }
+    }
 }
 
 
 @media (max-width: 320px) 
 {
-  .container-box {
+  .container-box span {
     width: 100%;
-    font-size: 7px;
-   }
+    font-size: 9px;
+  }
+
+  .container-projects {
+    margin-right: 80px;
+  
+  }
 }
-
-
 
 
 @keyframes para {
@@ -208,5 +220,30 @@ a:link {
         1000px 100%,
         400px 0;
     }
+}
+
+@-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
