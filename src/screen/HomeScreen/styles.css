@@ -2,7 +2,6 @@
 body {
   margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 
 a:link {
@@ -76,6 +75,7 @@ a:link {
 .container-box {
   height: 550px;
   width: 30%;
+  padding: 0 20px;
   border: 1px solid white;
   box-shadow: -1px 6px 13px 0px rgba(0,0,0,0.44);
   -webkit-box-shadow: -1px 6px 13px 0px rgba(0,0,0,0.44);
@@ -86,7 +86,6 @@ a:link {
   animation: infinite;
   -webkit-animation: fade-in-right 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: fade-in-right 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-
 }
 
 .text-name {
@@ -110,7 +109,6 @@ a:link {
   margin-top: 35px; 
   cursor: pointer;
   font-size: 20px;
-
 }
 
 .container-icon {
@@ -118,14 +116,12 @@ a:link {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .icon {
   border-radius: 250px;
   width: 150px;
-  height: 150px;  
-
+  height: 150px;
 }
 
 .container-social-media {
@@ -134,8 +130,10 @@ a:link {
   justify-content: space-around;
   align-items: center;
   margin-top: 50px;
-  cursor: pointer;
+}
 
+.container-social-media a {
+  cursor: pointer;
 }
 
 .icon-social-media {
@@ -143,7 +141,7 @@ a:link {
   height: 30px;
 }
 
-.text-email {
+.small-text {
   margin-top: 35px;
   font-size: 12px;
   display: flex;
