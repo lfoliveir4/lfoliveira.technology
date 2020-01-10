@@ -45,7 +45,7 @@ function Home() {
                     </div>
 
                     <span class="text-name">Luis Filipe Alves de Oliveira</span>
-                    <span class="text-dev">Coding since 2017 and making dream come true with React & React Native</span>
+                    <span class="text-dev">Coding two years and making dream come true with React & React Native</span>
                     <span class="text-dev">What can I do to help you today ?!</span>
                     <span class="text-dev-app"></span>
                     
@@ -56,7 +56,7 @@ function Home() {
                       <a href="https://twitter.com/lfoliveir4" target="_blank"><img src={twitter} className="icon-social-media" /></a>
                     </div>
                     <span class="small-text"><a href={`mailto:lfoliveira.dev@gmail.com`}>lfoliveira.dev@gmail.com</a></span>
-                    <span class="small-text"><a href={`mailto:lfoliveira.dev@gmail.com`}>Obs: All apps are published to App Store and Play Store</a></span>
+                    {/*<span class="small-text"><a href={`mailto:lfoliveira.dev@gmail.com`}>Obs: All apps are published to App Store and Play Store</a></span>*/}
                   </div>
                   {/*
                     <div className={classes.root}>
