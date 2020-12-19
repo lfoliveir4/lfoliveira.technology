@@ -3,3 +3,5 @@
 Persional site 
 
 deployed: Netlify
+
+https://lfoliveira.netlify.app/
