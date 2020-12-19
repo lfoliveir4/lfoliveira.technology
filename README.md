@@ -1,5 +1,5 @@
 ### Luis Filipe Alves de Oliveira
 
-Personal site
+Personal site developed with NextJS
 
 deployed: Vercel
