@@ -11,10 +11,6 @@ export default function Layout({ children }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
