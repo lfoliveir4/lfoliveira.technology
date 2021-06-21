@@ -2,6 +2,6 @@
 
 Persional site 
 
-deployed: Netlify
+deployed: Vercel
 
-https://lfoliveira.netlify.app/
+https://lfoliveira.technology/
