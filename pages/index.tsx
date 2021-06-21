@@ -13,9 +13,9 @@ export default function Home() {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Fullstack developer. Solving problems with javascript since 2017.
-          Focused and passionate about React, Node, GraphQL with a few hints of
-          Golang.
+          Mobile Software Engineer. Solving problems with javascript since 2017.
+          Focused and passionate about React, React Native, Node with a few hints of
+          Swift.
         </p>
       </section>
 
