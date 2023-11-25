@@ -1,95 +1,82 @@
+import { ReactNode } from 'react';
 import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './layout.module.css'
+import utilStyles from "./utils.module.css";
+import socialMediaStyles from "./socialmedia.module.css";
+import emailStyles from "./email.module.css";
+
+interface LayoutProps {
+  children: ReactNode
+}
+
+function Layout({ children }: LayoutProps) {
+  return (
+    <div className={styles.container}>
+      <header className={styles.header}>
+        <>
+          <img
+            src="/perfil.jpeg"
+            className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+            alt="Luis Filipe Alves de Oliveira"
+          />
+          <h1 className={utilStyles.heading2Xl}>Luis Filipe Alves de Oliveira</h1>
+        </>
+      </header>
+      <main>{children}</main>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <Layout>
+      <section className={utilStyles.headingMd}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+        Senior iOS Software Engineer. Specialist and passionate about iOS development, with a solid foundation in app creation. Committed to delivering the best user experiences in mobile app development.
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+      </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+      <section className={socialMediaStyles.container}>
+        <a href="https://gitlab.com/lfoliveira.dev" target="_blank">
+          <Image
+            src="/gitlab.png"
+            alt="Gitlab Luis Filipe Alves de Oliveira"
+            width={50}
+            height={50}
+          />
         </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+        <a href="https://github.com/lfoliveir4" target="_blank">
+          <Image
+            src="/github.png"
+            alt="Github Luis Filipe Alves de Oliveira"
+            width={50}
+            height={50}
+          />
         </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
+        <a href="https://www.linkedin.com/in/lf-oliveira/" target="_blank">
+          <Image
+            src="/linkedin-icon.jpg"
+            alt="Linkedin Luis Filipe Alves de Oliveira"
+            width={50}
+            height={50}
+          />
         </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
+        <a href="https://twitter.com/lfoliveir4" target="_blank">
+          <Image
+            src="/twitter.png"
+            alt="Twitter Luis Filipe Alves de Oliveira"
+            width={50}
+            height={50}
+          />
         </a>
-      </div>
-    </main>
+      </section>
+
+      <section className={emailStyles.container}>
+        <a href="mailto:lfoliveira.dev@gmail.com">lfoliveira.dev@gmail.com</a>
+      </section>
+    </Layout>
   )
 }
